@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scuffed_Contra", "Scuffed_Contra\Scuffed_Contra.csproj", "{9529434C-6EDE-467B-BA9D-CA897FBE0969}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9529434C-6EDE-467B-BA9D-CA897FBE0969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9529434C-6EDE-467B-BA9D-CA897FBE0969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9529434C-6EDE-467B-BA9D-CA897FBE0969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9529434C-6EDE-467B-BA9D-CA897FBE0969}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {344987C3-3909-43A6-BE17-25A9FDAF70B4}
+	EndGlobalSection
+EndGlobal

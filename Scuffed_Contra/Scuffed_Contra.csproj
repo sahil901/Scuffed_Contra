@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9529434C-6EDE-467B-BA9D-CA897FBE0969}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Scuffed_Contra</RootNamespace>
+    <AssemblyName>Scuffed_Contra</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="character.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOver.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameScreen.Designer.cs">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="instructionScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="instructionScreen.Designer.cs">
+      <DependentUpon>instructionScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="levelDesign.cs" />
+    <Compile Include="MainScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PauseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseForm.Designer.cs">
+      <DependentUpon>PauseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameScreen.resx">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instructionScreen.resx">
+      <DependentUpon>instructionScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseForm.resx">
+      <DependentUpon>PauseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigbrain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billrizer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen Shot 2018-05-30 at 12.56.14 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2829%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %282%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %283%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %284%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %285%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %286%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2811%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2812%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2813%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2814%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2815%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2820%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2821%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2822%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2823%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2824%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %287%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %288%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %289%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2810%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2816%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2817%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2818%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2819%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2825%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2826%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2827%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contra SFX %2828%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="levels.xml" />
+    <None Include="Resources\SoliderS.gif" />
+    <None Include="Resources\Mario_Jumping-Mike_Koenig-989896458.wav" />
+    <None Include="Resources\playerShoot.wav" />
+    <None Include="Resources\enemyDead.wav" />
+    <None Include="Resources\playerDead.wav" />
+    <None Include="Resources\enemyShoot.wav" />
+    <None Include="Resources\LanceJumpingR.gif" />
+    <None Include="Resources\LanceJumpingL.gif" />
+    <None Include="Resources\LanceStandingR.png" />
+    <None Include="Resources\LanceWalking.gif" />
+    <None Include="Resources\SoldierL.gif" />
+    <None Include="Resources\ExtraLifeBlue.png" />
+    <None Include="Resources\backgroundIMAGEboi.png" />
+    <None Include="Resources\background %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
